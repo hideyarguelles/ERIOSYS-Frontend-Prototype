@@ -97,6 +97,10 @@ li.nav-item.active .sidebar-image {
     color : black;
 }
 
+.card {
+    border: 0; !important;
+}
+
 /*Sidebar*/
 .sidebar {
     max-width      : 300px;

@@ -130,6 +130,7 @@
         </div>
 
         <div class="page-body">
+            <!-- Institution Details -->
             <div>
                 <p class="text-muted text-uppercase ml-3 mb-1 pt-4 small">Institution details</p>
                 <ul class="list-group h-100 bg-light border-left-0">
@@ -155,10 +156,14 @@
                     </li>
                 </ul>
             </div>
+
+            <!-- Memorandums -->
+            <!-- IMPORTANT NOTE: It is important to have the appropriate data-parents per accordion.-->
             <div class="p-5">
                 <div id="accordion" role="tablist">
+                    <!-- Memorandums of Understanding -->
                     <div class="card">
-                        <div class="card-header" role="tab" id="headingTwo">
+                        <div class="card-header" role="tab" id="understanding-heading">
                             <h5 class="mb-0">
                                 <a class="collapsed accordion-link" data-toggle="collapse" href="#understanding"
                                    aria-expanded="false"
@@ -167,40 +172,61 @@
                                 </a>
                             </h5>
                         </div>
-                        <div id="understanding" class="collapse show" role="tabpanel" aria-labelledby="headingTwo"
+                        <div id="understanding" class="collapse show" role="tabpanel" aria-labelledby="understanding-heading"
                              data-parent="#accordion">
                             <div class="card-body">
-                                <table class="table">
-                                    <thead>
-                                    <tr>
-                                        <th>Version</th>
-                                        <th>Date</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td>Version 1</td>
-                                        <td>18 June 1998</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Version 1</td>
-                                        <td>18 June 1998</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Version 1</td>
-                                        <td>18 June 1998</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Version 1</td>
-                                        <td>18 June 1998</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
+                                <div id="understanding-accordion" role="tablist">
+
+                                    <div class="card">
+                                        <div class="card-header" role="tab" id="understanding-heading-one">
+                                            <h5 class="mb-0">
+                                                <a class="accordion-link" data-toggle="collapse" href="#understanding-one" aria-expanded="true"
+                                                   aria-controls="understanding-one">
+                                                    <small>Version July 16 2016</small>
+                                                </a>
+                                            </h5>
+                                        </div>
+                                        <div id="understanding-one" class="collapse" role="tabpanel"
+                                             aria-labelledby="understanding-heading-one" data-parent="#understanding-accordion">
+                                            <div class="card-body">
+                                                <div class="btn-toolbar" role="toolbar">
+                                                    <button type="button" class="btn btn-outline-secondary mr-2">Initial Copy</button>
+                                                    <button type="button" class="btn btn-outline-secondary mr-2">Actual Copy</button>
+                                                    <button type="button" class="btn btn-outline-secondary mr-2">Final Copy</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-header" role="tab" id="understanding-heading-two">
+                                            <h5 class="mb-0">
+                                                <a class="collapsed accordion-link" data-toggle="collapse" href="#understanding-two"
+                                                   aria-expanded="false" aria-controls="collapseTwo">
+                                                    <small>Version July 16 2016</small>
+                                                </a>
+                                            </h5>
+                                        </div>
+                                        <div id="understanding-two" class="collapse" role="tabpanel"
+                                             aria-labelledby="understanding-heading-two" data-parent="#understanding-accordion">
+                                            <div class="card-body">
+                                                <div class="btn-toolbar" role="toolbar">
+                                                    <button type="button" class="btn btn-outline-secondary mr-2">Initial Copy</button>
+                                                    <button type="button" class="btn btn-outline-secondary mr-2">Actual Copy</button>
+                                                    <button type="button" class="btn btn-outline-secondary mr-2">Final Copy</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Memorandums of Agreement -->
                     <div class="card">
-                        <div class="card-header" role="tab" id="headingOne">
+                        <div class="card-header" role="tab" id="agreement-heading">
                             <h5 class="mb-0">
                                 <a class="collapsed accordion-link" data-toggle="collapse" href="#agreement"
                                    aria-expanded="true"
@@ -209,35 +235,56 @@
                                 </a>
                             </h5>
                         </div>
-                        <div id="agreement" class="collapse" role="tabpanel" aria-labelledby="headingOne"
+                        <div id="agreement" class="collapse" role="tabpanel" aria-labelledby="agreement-heading"
                              data-parent="#accordion">
                             <div class="card-body">
-                                <table class="table">
-                                    <thead>
-                                    <tr>
-                                        <th>Version</th>
-                                        <th>Date</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td>Version 1</td>
-                                        <td>18 June 1998</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Version 1</td>
-                                        <td>18 June 1998</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Version 1</td>
-                                        <td>18 June 1998</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Version 1</td>
-                                        <td>18 June 1998</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
+
+                                <div id="agreement-accordion" role="tablist">
+
+                                    <div class="card">
+                                        <div class="card-header" role="tab" id="agreement-heading-one">
+                                            <h5 class="mb-0">
+                                                <a class="accordion-link" data-toggle="collapse" href="#agreement-one" aria-expanded="true"
+                                                   aria-controls="agreement-one">
+                                                    <small>Version July 16 2016</small>
+                                                </a>
+                                            </h5>
+                                        </div>
+                                        <div id="agreement-one" class="collapse" role="tabpanel"
+                                             aria-labelledby="agreement-heading-one" data-parent="#agreement-accordion">
+                                            <div class="card-body">
+                                                <div class="btn-toolbar" role="toolbar">
+                                                    <button type="button" class="btn btn-outline-secondary mr-2">Initial Copy</button>
+                                                    <button type="button" class="btn btn-outline-secondary mr-2">Actual Copy</button>
+                                                    <button type="button" class="btn btn-outline-secondary mr-2">Final Copy</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-header" role="tab" id="agreement-heading-two">
+                                            <h5 class="mb-0">
+                                                <a class="collapsed accordion-link" data-toggle="collapse" href="#agreement-two"
+                                                   aria-expanded="false" aria-controls="collapseTwo">
+                                                    <small>Version July 16 2016</small>
+                                                </a>
+                                            </h5>
+                                        </div>
+                                        <div id="agreement-two" class="collapse" role="tabpanel"
+                                             aria-labelledby="agreement-heading-two" data-parent="#agreement-accordion">
+                                            <div class="card-body">
+                                                <div class="btn-toolbar" role="toolbar">
+                                                    <button type="button" class="btn btn-outline-secondary mr-2">Initial Copy</button>
+                                                    <button type="button" class="btn btn-outline-secondary mr-2">Actual Copy</button>
+                                                    <button type="button" class="btn btn-outline-secondary mr-2">Final Copy</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
                             </div>
                         </div>
                     </div>
