@@ -130,7 +130,7 @@
         </div>
 
         <div class="page-body">
-            <div class="mb-3">
+            <div>
                 <p class="text-muted text-uppercase ml-3 mb-1 pt-4 small">Institution details</p>
                 <ul class="list-group h-100 bg-light border-left-0">
                     <li class="list-group-item">
@@ -156,40 +156,92 @@
                 </ul>
             </div>
             <div class="p-5">
-                <ul class="nav nav-tabs">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">MOA</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">MOU</a>
-                    </li>
-                </ul>
-                <table class="table">
-                    <thead>
-                    <tr>
-                        <th>Version</th>
-                        <th>Date</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>Version 1</td>
-                        <td>18 June 1998</td>
-                    </tr>
-                    <tr>
-                        <td>Version 1</td>
-                        <td>18 June 1998</td>
-                    </tr>
-                    <tr>
-                        <td>Version 1</td>
-                        <td>18 June 1998</td>
-                    </tr>
-                    <tr>
-                        <td>Version 1</td>
-                        <td>18 June 1998</td>
-                    </tr>
-                    </tbody>
-                </table>
+                <div id="accordion" role="tablist">
+                    <div class="card">
+                        <div class="card-header" role="tab" id="headingTwo">
+                            <h5 class="mb-0">
+                                <a class="collapsed accordion-link" data-toggle="collapse" href="#understanding"
+                                   aria-expanded="false"
+                                   aria-controls="understanding">
+                                    Memorandums of Understanding
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="understanding" class="collapse show" role="tabpanel" aria-labelledby="headingTwo"
+                             data-parent="#accordion">
+                            <div class="card-body">
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th>Version</th>
+                                        <th>Date</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Version 1</td>
+                                        <td>18 June 1998</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Version 1</td>
+                                        <td>18 June 1998</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Version 1</td>
+                                        <td>18 June 1998</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Version 1</td>
+                                        <td>18 June 1998</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" role="tab" id="headingOne">
+                            <h5 class="mb-0">
+                                <a class="collapsed accordion-link" data-toggle="collapse" href="#agreement"
+                                   aria-expanded="true"
+                                   aria-controls="agreement">
+                                    Memorandums of Agreement
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="agreement" class="collapse" role="tabpanel" aria-labelledby="headingOne"
+                             data-parent="#accordion">
+                            <div class="card-body">
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th>Version</th>
+                                        <th>Date</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Version 1</td>
+                                        <td>18 June 1998</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Version 1</td>
+                                        <td>18 June 1998</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Version 1</td>
+                                        <td>18 June 1998</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Version 1</td>
+                                        <td>18 June 1998</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
