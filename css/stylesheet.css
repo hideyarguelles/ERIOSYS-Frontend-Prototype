@@ -1,0 +1,129 @@
+/*Global Classes*/
+
+:root {
+    --gray         : rgb(212, 212, 212);
+    --header-white : rgb(246, 246, 248);
+    --search-white : rgb(232, 232, 234);
+    --body-white   : rgb(239, 238, 245);
+    --dlsu-green   : #00703c;
+}
+
+.bg-dlsu {
+    background : var(--dlsu-green) !important;
+}
+
+.bg-search-white {
+    background : var(--search-white) !important;
+}
+
+.bg-body-white {
+    background : var(--body-white) !important;
+}
+
+/*Main Navigation*/
+#main-navigation {
+    box-shadow         : 0 1px 1px rgba(0, 0, 0, 0.08), 0 1px 1px rgba(0, 0, 0, 0.24);
+    z-index            : 1040;
+    -webkit-app-region : drag;
+    max-width          : 80px;
+    width              : 80px;
+    padding            : 0;
+}
+
+#main-navigation li.nav-item.active a.nav-item {
+    font-size   : 20px;
+    font-weight : bold;
+}
+
+#main-navigation .nav-link {
+    padding : 0;
+    width   : 100%;
+}
+
+#main-navigation ul.navbar-nav,
+#main-navigation ul.navbar-nav li.nav-item {
+    width : 100%;
+}
+
+#main-navigation li.nav-item a {
+    text-align : center;
+}
+
+li.nav-item.active {
+    background : rgba(0, 0, 0, 0.3);
+}
+
+.sidebar-image {
+    margin     : 15px;
+    width      : 40px;
+    height     : 40px;
+    cursor     : pointer;
+    transition : 150ms opacity;
+    opacity    : 0.8;
+}
+
+.sidebar-image:hover {
+    opacity : 1;
+}
+
+li.nav-item.active .sidebar-image {
+    opacity : 1;
+}
+
+/*Page Head*/
+.page-head {
+    background    : var(--header-white);
+    border-bottom : 1px solid var(--gray);
+    padding       : 1rem;
+}
+
+.page-head-title {
+    font-weight : bold;
+}
+
+.page-head-controls {
+    display        : flex;
+    flex-direction : row;
+}
+
+.page-body {
+    height     : 100%;
+    overflow-y : scroll !important;
+    background : var(--body-white);
+}
+
+/*Sidebar*/
+.sidebar {
+    max-width      : 300px;
+    min-width      : 300px;
+    border-right   : 1px solid var(--gray);
+    display        : flex;
+    flex-direction : column;
+}
+
+/*List group item override*/
+.list-group-item:first-child,
+.list-group-item:last-child {
+    border-radius : 0 !important;
+}
+
+.list-group-item {
+    border-right : 0;
+    border-left  : 0;
+}
+
+/*Switch user*/
+#switch-user-button {
+    width          : 100%;
+    color          : white;
+    padding-top    : 24px;
+    padding-bottom : 16px;
+    text-align     : center;
+    background     : rgba(0, 0, 0, 0.3);
+    transition     : 150ms background;
+}
+
+#switch-user-button:hover {
+    background     : rgba(0, 0, 0, 0.1);
+
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <title>ERIO - Home</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+          integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+            integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+            integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+            crossorigin="anonymous"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/stylesheet.css">
+
+    <!-- Tooltip -->
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+
+</head>
+<body class="h-100 d-flex">
+
+<!-- Nav -->
+<nav id="main-navigation"
+     class="navbar navbar-expand-lg navbar-dark bg-dlsu d-flex flex-column justify-content-between">
+    <ul class="navbar-nav align-items-center d-flex flex-column mt-auto mb-auto">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Home">
+            <a class="nav-link"><img class="sidebar-image" src="../img/home.png"></a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Institutions">
+            <a class="nav-link"><img class="sidebar-image" src="../img/uni.png"></a>
+        </li>
+        <li class="nav-item active" data-toggle="tooltip" data-placement="right" title="Students">
+            <a class="nav-link"><img class="sidebar-image" src="../img/student.png"></a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Programs">
+            <a class="nav-link"><img class="sidebar-image" src="../img/airplane.png"></a>
+        </li>
+    </ul>
+
+    <div id="switch-user-button" >
+        <h6>Ohda</h6>
+    </div>
+</nav>
+
+<!-- Tab Body -->
+<div class="container-fluid d-flex flex-row p-0 h-100">
+    <div class="sidebar h-100" id="institution-list">
+
+        <!-- Sidebar -->
+        <div class="page-head">
+            <div class="page-head-controls">
+                <button class="ml-auto btn btn-sm btn-outline-success">Add</button>
+            </div>
+            <h4 class="page-head-title">Institutions</h4>
+            <input class="form-control bg-search-white border-0 search-input" type="search"
+                   placeholder="Search institutions" aria-label="Search">
+        </div>
+
+        <div class="page-body">
+
+            <div class="section">
+                <p class="text-muted text-uppercase ml-3 mb-1 pt-4 small">France</p>
+                <ul class="list-group border-left-0">
+                    <li class="list-group-item">University of Tokyo</li>
+                    <li class="list-group-item">University of Tokyo</li>
+                    <li class="list-group-item">University of Tokyo</li>
+                    <li class="list-group-item">University of Tokyo</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <p class="text-muted text-uppercase ml-3 mb-1 pt-4 small">Italy</p>
+                <ul class="list-group border-left-0">
+                    <li class="list-group-item">University of Tokyo</li>
+                    <li class="list-group-item">University of Tokyo</li>
+                </ul>
+            </div>
+
+
+            <div class="section">
+                <p class="text-muted text-uppercase ml-3 mb-1 pt-4 small">Singapore</p>
+                <ul class="list-group border-left-0">
+                    <li class="list-group-item">University of Tokyo</li>
+                    <li class="list-group-item">University of Tokyo</li>
+                    <li class="list-group-item">University of Tokyo</li>
+                    <li class="list-group-item">University of Tokyo</li>
+                    <li class="list-group-item">University of Tokyo</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <p class="text-muted text-uppercase ml-3 mb-1 pt-4 small">Japan</p>
+                <ul class="list-group border-left-0">
+                    <li class="list-group-item">University of Tokyo</li>
+                    <li class="list-group-item">University of Tokyo</li>
+                    <li class="list-group-item">University of Tokyo</li>
+                    <li class="list-group-item">University of Tokyo</li>
+                    <li class="list-group-item">University of Tokyo</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid p-0" id="institution-detail">
+
+        <div class="page-head pt-5 d-flex flex-row align-items-center">
+            <div class="mr-auto">
+                <h4 class="page-head-title justify-content-left d-inline-block">University of Tokyo</h4>
+                <h4 class="text-muted d-inline-block font-weight-light">Japan</h4>
+            </div>
+
+            <div class="right">
+                <button class="btn btn-outline-success">Edit</button>
+                <button class="btn btn-outline-danger">Delete</button>
+            </div>
+
+        </div>
+
+        <div class="page-body">
+            <p class="text-muted text-uppercase ml-3 mb-1 pt-4 small">Institution details</p>
+            <ul class="list-group h-100 bg-light border-left-0">
+                <li class="list-group-item">
+                    <b>Email</b>
+                    <p class="m-0">foreignaffairs@universityoftokyo.com</p>
+                </li>
+                <li class="list-group-item">
+                    <b>Address</b>
+                    <p class="m-0">Something Street @ Bla I don't know more things for address</p>
+                </li>
+                <li class="list-group-item">
+                    <b>Website</b>
+                    <p class="m-0">foreignaffairs@universityoftokyo.com</p>
+                </li>
+                <li class="list-group-item">
+                    <b>Contact Person</b>
+                    <p class="m-0">Someone Surname</p>
+                </li>
+                <li class="list-group-item">
+                    <b>Contact Number</b>
+                    <p class="m-0">000 000 000 000</p>
+                </li>
+            </ul>
+        </div>
+
+
+        <!--<h3>University of Tokyo</h3>-->
+        <!--<h6 class="text-secondary">Japan</h6>-->
+        <!--<div id="university-details" class="mt-5">-->
+        <!--<h6>E-mail goes here</h6>-->
+        <!--<h6><a href="http://www.u-tokyo.ac.jp/en/">http://www.u-tokyo.ac.jp/en/</a></h6>-->
+        <!--<h6 class="detail">7 Chome-3-1 Hongo, Bunkyo, Tokyo 113-8654, Japan</h6>-->
+        <!--<h6>Contact person goes here</h6>-->
+        <!--<h6>Contact number goes here</h6>-->
+        <!--</div>-->
+    </div>
+
+</div>
+
+</body>
+</html>
