@@ -128,7 +128,9 @@
                 <button class="btn btn-sm btn-outline-success" data-toggle="modal"
                         data-target="#edit-institution-modal">Edit
                 </button>
-                <button class="btn btn-sm btn-outline-danger">Delete</button>
+                <button class="btn btn-sm btn-outline-danger" data-toggle="modal"
+                        data-target="#delete-institution-modal">Delete
+                </button>
             </div>
 
         </div>
@@ -447,6 +449,28 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Cancel</button>
                 <button type="button" class="btn btn-outline-success">Save Changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Delete institution modal -->
+<div id="delete-institution-modal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Delete Institution</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to delete this institution? All memorandums and programs under this institution
+                    will be lost.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-outline-danger">Delete</button>
             </div>
         </div>
     </div>
