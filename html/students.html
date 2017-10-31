@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <title>ERIO - Students</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+          integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+            integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+            integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+            crossorigin="anonymous"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/stylesheet.css">
+
+    <!-- Tooltip -->
+    <script>
+        $(function () {
+            $("[data-toggle=\"tooltip\"]").tooltip();
+        });
+    </script>
+</head>
+<body class="h-100 d-flex">
+
+<!-- Nav -->
+<nav id="main-navigation"
+     class="navbar navbar-expand-lg navbar-dark bg-dlsu d-flex flex-column justify-content-between">
+    <ul class="navbar-nav align-items-center d-flex flex-column mt-auto mb-auto">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Home">
+            <img class="sidebar-image" src="../img/home.png">
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Institutions">
+            <img class="sidebar-image" src="../img/uni.png">
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Programs">
+            <img class="sidebar-image" src="../img/airplane.png">
+        </li>
+        <li class="nav-item active" data-toggle="tooltip" data-placement="right" title="Students">
+            <img class="sidebar-image" src="../img/student.png">
+        </li>
+    </ul>
+
+    <div id="switch-user-button" data-toggle="tooltip" data-placement="right" title="Switch Users">
+        <h6>Ohda</h6>
+    </div>
+</nav>
+
+<div class="sidebar h-100" id="student-list">
+
+    <!-- Sidebar -->
+    <div class="page-head">
+        <div class="page-head-controls">
+            <div class="btn-group mt-3 ml-auto" role="group">
+                <button type="button" class="btn btn-sm btn-outline-success active">Active</button>
+                <button type="button" class="btn btn-sm btn-outline-success">Historical</button>
+            </div>
+            <button id="add-student-button" class="btn btn-sm btn-outline-success mt-3 ml-3" data-toggle="modal"
+                    data-target="#add-student-modal">Add
+            </button>
+        </div>
+        <h4 class="page-head-title">Students</h4>
+        <input class="form-control bg-search-white border-0 search-input" type="search"
+               placeholder="Search students" aria-label="Search">
+    </div>
+
+    <div class="page-body">
+        <div class="section">
+            <small class="section-title">A</small>
+            <ul class="list-group">
+                <li class="list-group-item">Hidey Arguelles</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <small class="section-title">B</small>
+            <ul class="list-group border-left-0">
+                <li class="list-group-item">Keith Tan</li>
+                <li class="list-group-item">Jason Deniega</li>
+            </ul>
+        </div>
+
+
+        <div class="section">
+            <small class="section-title">C</small>
+            <ul class="list-group border-left-0">
+                <li class="list-group-item">Kam Gamboa</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid d-flex flex-column p-0" id="student-detail">
+
+    <div class="page-head pt-5 d-flex flex-row align-items-center">
+        <div class="mr-auto">
+            <h4 class="page-head-title justify-content-left d-inline-block mb-0">Hidey Arguelles</h4>
+            <h4 class="text-muted d-inline-block font-weight-light mb-0">11540680</h4>
+        </div>
+
+        <div class="right">
+            <button class="btn btn-sm btn-outline-success" data-toggle="modal"
+                    data-target="#edit-student-modal">Edit
+            </button>
+            <button class="btn btn-sm btn-outline-danger" data-toggle="modal"
+                    data-target="#delete-student-modal">Delete
+            </button>
+        </div>
+
+    </div>
+
+    <div class="page-body">
+        <div>
+            <small class="section-title">Contact Details</small>
+            <ul class="list-group h-100 bg-light border-left-0">
+                <li class="list-group-item">
+                    <small class="font-weight-bold">Phone Number</small>
+                    <p class="m-0">000 000 000 000</p>
+                </li>
+                <li class="list-group-item">
+                    <small class="font-weight-bold">E-mail</small>
+                    <p class="m-0">catherine_arguelles@dlsu.edu.ph</p>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <small class="section-title">Student Details</small>
+            <ul class="list-group h-100 bg-light border-left-0">
+                <li class="list-group-item">
+                    <small class="font-weight-bold">Address</small>
+                    <p class="m-0">Something Street @ Bla I don't know more things for address</p>
+                </li>
+                <li class="list-group-item">
+                    <small class="font-weight-bold">Nickname</small>
+                    <p class="m-0">Hidey</p>
+                </li>
+                <li class="list-group-item">
+                    <small class="font-weight-bold">Sex</small>
+                    <p class="m-0">Female</p>
+                </li>
+                <li class="list-group-item">
+                    <small class="font-weight-bold">Birth Date</small>
+                    <p class="m-0">18 June 1998</p>
+                </li>
+                <li class="list-group-item">
+                    <small class="font-weight-bold">Nationality</small>
+                    <p class="m-0">Filipino</p>
+                </li>
+                <li class="list-group-item">
+                    <small class="font-weight-bold">Civil Status</small>
+                    <p class="m-0">Single</p>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <small class="section-title">University Details</small>
+            <ul class="list-group h-100 bg-light border-left-0">
+                <li class="list-group-item">
+                    <small class="font-weight-bold">College</small>
+                    <p class="m-0">Ramon V. del Rosario College of Business</p>
+                </li>
+                <li class="list-group-item">
+                    <small class="font-weight-bold">Student Type</small>
+                    <p class="m-0">Outbound</p>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <small class="section-title">Emergency Details</small>
+            <ul class="list-group h-100 bg-light border-left-0">
+                <li class="list-group-item">
+                    <small class="font-weight-bold">Emergency Contact</small>
+                    <p class="m-0">Someone Surname (Mother)</p> <!-- Notice how this includes the relationship. -->
+                </li>
+                <li class="list-group-item">
+                    <small class="font-weight-bold">Emergency Contact Number</small>
+                    <p class="m-0">000 000 000 000</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
