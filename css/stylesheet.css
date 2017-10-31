@@ -1,5 +1,4 @@
 /*Global Classes*/
-
 :root {
     --gray         : rgb(212, 212, 212);
     --header-white : rgb(246, 246, 248);
@@ -18,6 +17,32 @@
 
 .bg-body-white {
     background : var(--body-white) !important;
+}
+
+/*Draggable region on top*/
+#window-handle-bar {
+    height             : 50px;
+    width              : 100vw;
+    -webkit-app-region : drag;
+}
+
+/*Section titles and footers*/
+small.section-title,
+small.section-footer {
+    display     : block;
+    color       : var(--secondary);
+    margin-left : 1rem;
+}
+
+small.section-title {
+    text-transform : uppercase;
+    padding-top    : 1.5rem;
+    margin-bottom  : .25rem;
+}
+
+small.section-footer {
+    margin-bottom : 1.5rem;
+    margin-top    : .5rem;
 }
 
 /*Main Navigation*/
@@ -45,11 +70,12 @@
     width : 100%;
 }
 
-#main-navigation li.nav-item a {
+#main-navigation li.nav-item {
     text-align : center;
+    transition : 300ms background;
 }
 
-li.nav-item.active {
+#main-navigation li.nav-item.active {
     background : rgba(0, 0, 0, 0.3);
 }
 
@@ -59,10 +85,10 @@ li.nav-item.active {
     height     : 40px;
     cursor     : pointer;
     transition : 150ms opacity;
-    opacity    : 0.8;
+    opacity    : 0.65;
 }
 
-.sidebar-image:hover {
+li.nav-item:hover .sidebar-image {
     opacity : 1;
 }
 
@@ -95,10 +121,6 @@ li.nav-item.active .sidebar-image {
 /*Page Body*/
 .accordion-link {
     color : black;
-}
-
-.card {
-    border: 0; !important;
 }
 
 /*Sidebar*/
@@ -134,5 +156,53 @@ li.nav-item.active .sidebar-image {
 
 #switch-user-button:hover {
     background : rgba(0, 0, 0, 0.1);
-
 }
+
+/*Institutions Page*/
+#memorandums-accordion .card {
+    border-radius : 0;
+}
+
+#memorandums-accordion > .card,
+#memorandums-accordion .card-header {
+    border-left  : none;
+    border-right : none;
+}
+
+#memorandums-accordion > .card {
+    border : none;
+}
+
+#memorandums-accordion > .card:first-child {
+    border-top : 1px solid rgba(0, 0, 0, .125);
+}
+
+#memorandums-accordion > .card .card-header:not(.collapsed) {
+    background : white;
+}
+
+/*Sign In*/
+#sign-in {
+    position   : absolute;
+    z-index    : 2000;
+    transition : 500ms opacity;
+    opacity    : 1;
+}
+
+#erio-logo {
+    color        : white;
+    border-left  : 1px solid white;
+    padding-left : 24px;
+    font-weight  : 200;
+}
+
+#dlsu-logo {
+    width  : 160px;
+    height : 160px;
+}
+
+#sign-in input.form-control::placeholder {
+    color   : white;
+    opacity : 0.7;
+}
+
